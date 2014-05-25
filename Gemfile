@@ -4,12 +4,12 @@ source 'https://rubygems.org'
 gem 'rails', '4.0.0'
 
 gem 'bootstrap-sass', '~> 2.3'
-gem 'bcrypt-ruby', github: 'codahale/bcrypt-ruby' # Use ActiveModel has_secure_password
+gem 'bcrypt-ruby', :github => 'codahale/bcrypt-ruby' # Use ActiveModel has_secure_password
 gem 'bson_ext'
 gem 'coffee-rails', '~> 4.0.0'
 gem 'jbuilder', '~> 1.2'
 gem 'jquery-rails'
-gem 'mongoid', github: 'mongoid/mongoid'
+gem 'mongoid', :github => 'mongoid/mongoid'
 gem 'redis'
 gem 'sass-rails', '~> 4.0.0'
 gem 'sinatra', '>= 1.3.0', :require => nil # used for sidekiq web interface
