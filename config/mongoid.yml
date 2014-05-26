@@ -62,7 +62,7 @@ development:
 
     # Ensure all times are UTC in the app side. (default: false)
     # use_utc: false
-    
+
 test:
     # Configure available database sessions. (required)
   sessions:
@@ -74,3 +74,8 @@ test:
       options:
         skip_version_check: true
         safe: true
+
+production:
+    sessions:
+        default:
+            uri: <%= ENV['MONGOHQ_URL'] %>
