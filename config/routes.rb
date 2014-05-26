@@ -8,7 +8,7 @@ TilesChallenge::Application.routes.draw do
   mount Sidekiq::Web  => 'sidekiq'
 
 
-
+  root 'tiles#index'
 
 
   # The priority is based upon order of creation: first created -> highest priority.
