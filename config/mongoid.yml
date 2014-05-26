@@ -77,5 +77,9 @@ test:
 
 production:
     sessions:
-        default:
-            uri: <%= ENV['MONGOHQ_URL'] %>
+        database: tiles-challenge-prod
+        hosts:
+            - <%= ENV['MONGOHQ_URL'] %>
+          options:
+            skip_version_check: true
+            safe: true
