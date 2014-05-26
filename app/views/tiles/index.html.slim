@@ -1,20 +1,49 @@
-h1 Listing tiles
 
-table
-  tr
-    th Name
-    th Count
-    th
-    th
-    th
+div class="tiles-header"
+  h1 Tiles Challenge
+  p Click tiles until they are gone, and then get the Top 10 ranking of tiles clicked over time.
 
-  - @tiles.each do |tile|
-    tr
-      td = tile.name
-      td = tile.count
-      td = link_to 'Show', tile
-      td = link_to 'Edit', edit_tile_path(tile)
-      td = link_to 'Destroy', tile, :confirm => 'Are you sure?', :method => :delete
+div class="container"
+  div class="btn-toolbar" role="toolbar"
+    div class="btn-group btn-group-lg btn-group-justified btn-group-fill-height"
+      - @row1.each do |tile|
+        a href="#" class="btn btn-default tile" role="button"
+          strong = tile.name
+  div class="btn-toolbar" role="toolbar"
+    div class="btn-group btn-group-lg btn-group-justified btn-group-fill-height"
+      - @row2.each do |tile|
+        a href="#" class="btn btn-default tile" role="button"
+          strong = tile.name
+  div class="btn-toolbar" role="toolbar"
+    div class="btn-group btn-group-lg btn-group-justified btn-group-fill-height"
+      - @row3.each do |tile|
+        a href="#" class="btn btn-default tile" role="button"
+          strong = tile.name
+  div class="btn-toolbar" role="toolbar"
+    div class="btn-group btn-group-lg btn-group-justified btn-group-fill-height"
+      - @row4.each do |tile|
+        a href="#" class="btn btn-default tile" role="button"
+          strong = tile.name
+  div class="btn-toolbar" role="toolbar"
+    div class="btn-group btn-group-lg btn-group-justified btn-group-fill-height"
+      - @row5.each do |tile|
+        a href="#" class="btn btn-default tile" role="button"
+          strong = tile.name
+  div class="btn-toolbar" role="toolbar"
+    div class="btn-group btn-group-lg btn-group-justified btn-group-fill-height"
+      - @row6.each do |tile|
+        a href="#" class="btn btn-default tile" role="button"
+          strong = tile.name
+  div class="btn-toolbar" role="toolbar"
+    div class="btn-group btn-group-lg btn-group-justified btn-group-fill-height"
+      - @row7.each do |tile|
+        a href="#" class="btn btn-default tile" role="button"
+          strong = tile.name
+  div class="btn-toolbar" role="toolbar"
+    div class="btn-group btn-group-lg btn-group-justified btn-group-fill-height"
+      - @row8.each do |tile|
+        a href="#" class="btn btn-default tile" role="button"
+          strong = tile.name
 
 br
 

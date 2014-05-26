@@ -1,3 +1,33 @@
 // Place all the styles related to the tiles controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.tiles-header {
+  text-align: center;
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.tile {
+  text-align: center;
+  vertical-align: bottom;
+  background-color: #FFFFFF;
+}
+
+.clickedTile {
+  background: transparent;
+  border: none !important;
+  opacity: 0.0;
+}
+
+.activeTile {
+	background-color: #E6E6E6;
+}
+
+[class*="col-"] {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border: 1px solid #E6E6E6;
+}

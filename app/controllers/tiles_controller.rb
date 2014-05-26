@@ -4,7 +4,15 @@ class TilesController < ApplicationController
   # GET /tiles
   # GET /tiles.json
   def index
-    @tiles = Tile.all
+    tiles = Tile.all.shuffle
+    @row1 = tiles[0..7]
+    @row2 = tiles[8..15]
+    @row3 = tiles[16..23]
+    @row4 = tiles[24..31]
+    @row5 = tiles[32..39]
+    @row6 = tiles[40..47]
+    @row7 = tiles[48..55]
+    @row8 = tiles[56..63]
   end
 
   # GET /tiles/1
